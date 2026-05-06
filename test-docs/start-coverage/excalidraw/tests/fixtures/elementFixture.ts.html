@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for excalidraw/subset/woff2/woff2-loader.ts</title>
+    <title>Code coverage report for excalidraw/tests/fixtures/elementFixture.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">excalidraw/subset/woff2</a> woff2-loader.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">excalidraw/tests/fixtures</a> elementFixture.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.73% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>72/76</span>
+                <span class='fraction'>70/70</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">81.81% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>9/11</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.73% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>72/76</span>
+                <span class='fraction'>70/70</span>
             </div>
         
             
@@ -133,13 +133,7 @@
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
 <a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a>
-<a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a>
-<a name='L76'></a><a href='#L76'>76</a>
-<a name='L77'></a><a href='#L77'>77</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -159,14 +153,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">144x</span>
-<span class="cline-any cline-yes">144x</span>
-<span class="cline-any cline-yes">144x</span>
-<span class="cline-any cline-yes">1931904x</span>
-<span class="cline-any cline-yes">1931904x</span>
-<span class="cline-any cline-yes">144x</span>
-<span class="cline-any cline-yes">144x</span>
-<span class="cline-any cline-yes">144x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -186,110 +172,106 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">72x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-yes">72x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
- * DON'T depend on anything from the outside like `promiseTry`, as this module is part of a separate lazy-loaded chunk.
- *
- * Including anything from the main chunk would include the whole chunk by default.
- * Even it it would be tree-shaken during build, it won't be tree-shaken in dev.
- *
- * In the future consider separating common utils into a separate shared chunk.
- */
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { DEFAULT_FONT_FAMILY } from "@excalidraw/common";
 &nbsp;
-import bindings from "./woff2-bindings";
-import binary from "./woff2-wasm";
+import type { Radians } from "@excalidraw/math";
 &nbsp;
-/**
- * Lazy loads wasm and respective bindings for woff2 compression and decompression.
- */
-type Vector = any;
+import type { ExcalidrawElement } from "@excalidraw/element/types";
 &nbsp;
-let loadedWasm: ReturnType&lt;typeof load&gt; | null = null;
-&nbsp;
-// re-map from internal vector into byte array
-function convertFromVecToUint8Array(vector: Vector): Uint8Array&lt;ArrayBuffer&gt; {
-  const arr = [];
-  for (let i = 0, l = vector.size(); i &lt; l; i++) {
-    arr.push(vector.get(i));
-  }
-&nbsp;
-  return new Uint8Array(arr);
-}
-&nbsp;
-// TODO: consider adding support for fetching the wasm from an URL (external CDN, data URL, etc.)
-const load = (): Promise&lt;{
-  compress: (buffer: ArrayBuffer) =&gt; Uint8Array&lt;ArrayBuffer&gt;;
-  decompress: (buffer: ArrayBuffer) =&gt; Uint8Array&lt;ArrayBuffer&gt;;
-}&gt; =&gt; {
-  return new Promise((resolve, reject) =&gt; {
-    try {
-      // initializing the module manually, so that we could pass in the wasm binary
-      // note that the `bindings.then` is not not promise/A+ compliant, hence the need for another explicit try/catch
-      bindings({ wasmBinary: binary }).then(
-        (module: {
-          woff2Enc: (buffer: ArrayBuffer, byteLength: number) =&gt; Vector;
-          woff2Dec: (buffer: ArrayBuffer, byteLength: number) =&gt; Vector;
-        }) =&gt; {
-          try {
-            // re-exporting only compress and decompress functions (also avoids infinite loop inside emscripten bindings)
-            const woff2 = {
-              compress: (buffer: ArrayBuffer) =&gt;
-                convertFromVecToUint8Array(
-                  module.woff2Enc(buffer, buffer.byteLength),
-                ),
-              decompress: (buffer: ArrayBuffer) =&gt;
-                convertFromVecToUint8Array(
-                  module.woff2Dec(buffer, buffer.byteLength),
-                ),
-            };
-&nbsp;
-            resolve(woff2);
-<span class="branch-0 cbranch-no" title="branch not covered" >          } catch (e) {</span>
-<span class="cstat-no" title="statement not covered" >            reject(e);</span>
-<span class="cstat-no" title="statement not covered" >          }</span>
-        },
-      );
-<span class="branch-0 cbranch-no" title="branch not covered" >    } catch (e) {</span>
-<span class="cstat-no" title="statement not covered" >      reject(e);</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-  });
+const elementBase: Omit&lt;ExcalidrawElement, "type"&gt; = {
+  id: "vWrqOAfkind2qcm7LDAGZ",
+  x: 414,
+  y: 237,
+  width: 214,
+  height: 214,
+  angle: 0 as Radians,
+  strokeColor: "#000000",
+  backgroundColor: "#15aabf",
+  fillStyle: "hachure",
+  strokeWidth: 1,
+  strokeStyle: "solid",
+  roughness: 1,
+  opacity: 100,
+  groupIds: [],
+  frameId: null,
+  roundness: null,
+  index: null,
+  seed: 1041657908,
+  version: 120,
+  versionNonce: 1188004276,
+  isDeleted: false,
+  boundElements: null,
+  updated: 1,
+  link: null,
+  locked: false,
 };
 &nbsp;
-// lazy loaded default export
-export default (): ReturnType&lt;typeof load&gt; =&gt; {
-  if (!loadedWasm) {
-    loadedWasm = load();
-  }
+export const rectangleFixture: ExcalidrawElement = {
+  ...elementBase,
+  type: "rectangle",
+};
+export const embeddableFixture: ExcalidrawElement = {
+  ...elementBase,
+  type: "embeddable",
+};
+export const ellipseFixture: ExcalidrawElement = {
+  ...elementBase,
+  type: "ellipse",
+};
+export const diamondFixture: ExcalidrawElement = {
+  ...elementBase,
+  type: "diamond",
+};
+export const rectangleWithLinkFixture: ExcalidrawElement = {
+  ...elementBase,
+  type: "rectangle",
+  link: "excalidraw.com",
+};
 &nbsp;
-  return loadedWasm;
+export const textFixture: ExcalidrawElement = {
+  ...elementBase,
+  type: "text",
+  fontSize: 20,
+  fontFamily: DEFAULT_FONT_FAMILY,
+  strokeColor: "#1e1e1e",
+  text: "original text",
+  originalText: "original text",
+  textAlign: "left",
+  verticalAlign: "top",
+  containerId: null,
+  lineHeight: 1.25 as any,
+  autoResize: false,
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -298,7 +280,7 @@ export default (): ReturnType&lt;typeof load&gt; =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-05-06T13:06:38.007Z
+                at 2026-05-06T14:30:35.851Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

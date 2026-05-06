@@ -82,6 +82,7 @@ export default defineConfig({
         functions: 63,
         statements: 60,
       },
+      include: ["packages/**/*.{ts,tsx}"],
     },
   },
 });

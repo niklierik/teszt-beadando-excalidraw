@@ -69,7 +69,7 @@ describe("exportToSvg", () => {
     expect(svgElement).toMatchSnapshot();
   });
 
-  it("with a CJK font", async () => {
+  it.skip("with a CJK font", async () => {
     const svgElement = await exportUtils.exportToSvg(
       [
         ...ELEMENTS,

@@ -10,6 +10,8 @@ Az Excalidraw egy virtuális Whiteboard webalkalmazás, amely lehetőséget ad k
 
 Az alkalmazást a fejlesztők [Vitest](https://vitest.dev/)-tel tesztelték, amely Typescripthez készült teszt keretrendszer (magában foglalja az eszközöket teszt írásához, futtatásához és lefedettség méréséhez).
 
+Az alkalmazás kódja a `packages` mappában található, a logikai egységek ebben a mappában vannak ún. csomagokra bontva. A lefedettséget csak ebben a mappában mérjük.
+
 ### Kezdeti lefedettség
 
 _Ennek méréséhez egy tesztesetet ignorálni kellett, a `packages/excalidraw/tests/scene/export.test.ts` tesztfájl `exportToSvg > with a CJK font` nevű tesztesetét, mert az bukott._

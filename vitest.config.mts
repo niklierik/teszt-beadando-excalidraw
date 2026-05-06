@@ -83,6 +83,7 @@ export default defineConfig({
         statements: 60,
       },
       include: ["packages/**/*.{ts,tsx}"],
+      exclude: ["packages/**/woff2/*.{ts,tsx}"]
     },
   },
 });

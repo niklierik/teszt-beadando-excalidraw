@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60.78% </span>
+                <span class="strong">67.97% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>93/153</span>
+                <span class='fraction'>104/153</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.72% </span>
+                <span class="strong">73.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/11</span>
+                <span class='fraction'>11/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">57.14% </span>
+                <span class="strong">85.71% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/7</span>
+                <span class='fraction'>6/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60.78% </span>
+                <span class="strong">67.97% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>93/153</span>
+                <span class='fraction'>104/153</span>
             </div>
         
             
@@ -310,14 +310,20 @@
 <span class="cline-any cline-yes">1862x</span>
 <span class="cline-any cline-yes">1862x</span>
 <span class="cline-any cline-yes">1862x</span>
-<span class="cline-any cline-yes">845x</span>
+<span class="cline-any cline-yes">857x</span>
 <span class="cline-any cline-yes">1862x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -362,13 +368,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// -----------------------------------------------------------------------------
 // ExcalidrawImageElement &amp; related helpers
 // -----------------------------------------------------------------------------
@@ -466,19 +466,19 @@ export const getInitializedImageElements = (
     isInitializedImageElement(element),
   ) as InitializedExcalidrawImageElement[];
 &nbsp;
-export const isHTMLSVGElement = <span class="fstat-no" title="function not covered" >(node: Node | null): node is SVGElement =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  // lower-casing due to XML/HTML convention differences</span>
-<span class="cstat-no" title="statement not covered" >  // https://johnresig.com/blog/nodename-case-sensitivity</span>
-<span class="cstat-no" title="statement not covered" >  return node?.nodeName.toLowerCase() === "svg";</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+export const isHTMLSVGElement = (node: Node | null): node is SVGElement =&gt; {
+  // lower-casing due to XML/HTML convention differences
+  // https://johnresig.com/blog/nodename-case-sensitivity
+  return node?.nodeName.toLowerCase() === "svg";
+};
 &nbsp;
-export const normalizeSVG = <span class="fstat-no" title="function not covered" >(SVGString: string) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  const doc = new DOMParser().parseFromString(SVGString, MIME_TYPES.svg);</span>
-<span class="cstat-no" title="statement not covered" >  const svg = doc.querySelector("svg");</span>
-<span class="cstat-no" title="statement not covered" >  const errorNode = doc.querySelector("parsererror");</span>
-<span class="cstat-no" title="statement not covered" >  if (errorNode || !isHTMLSVGElement(svg)) {</span>
-<span class="cstat-no" title="statement not covered" >    throw new Error("Invalid SVG");</span>
-<span class="cstat-no" title="statement not covered" >  } else {</span>
+export const normalizeSVG = (SVGString: string) =&gt; {
+  const doc = new DOMParser().parseFromString(SVGString, MIME_TYPES.svg);
+  const svg = doc.querySelector("svg");
+  const errorNode = doc.querySelector("parsererror");
+  if (errorNode || !isHTMLSVGElement(svg)) {
+    throw new Error("Invalid SVG");
+<span class="branch-0 cbranch-no" title="branch not covered" >  } else {</span>
 <span class="cstat-no" title="statement not covered" >    if (!svg.hasAttribute("xmlns")) {</span>
 <span class="cstat-no" title="statement not covered" >      svg.setAttribute("xmlns", SVG_NS);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
@@ -521,7 +521,7 @@ export const normalizeSVG = <span class="fstat-no" title="function not covered" 
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    return svg.outerHTML;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -529,7 +529,7 @@ export const normalizeSVG = <span class="fstat-no" title="function not covered" 
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-05-19T12:18:11.466Z
+                at 2026-05-20T09:03:20.882Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

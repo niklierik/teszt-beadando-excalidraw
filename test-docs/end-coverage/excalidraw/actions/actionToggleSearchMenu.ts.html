@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>46/60</span>
+                <span class='fraction'>60/60</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/8</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>46/60</span>
+                <span class='fraction'>60/60</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -150,37 +150,37 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
@@ -210,23 +210,23 @@ export const actionToggleSearchMenu = register({
     predicate: (appState) =&gt; appState.gridModeEnabled,
   },
   perform(elements, appState, _, app) {
-    if (appState.openDialog) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >      return false;</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    if (appState.openDialog) {
+      return false;
+    }
 &nbsp;
     if (
-      appState.<span class="branch-0 cbranch-no" title="branch not covered" >openSidebar?.name === D</span>EFAULT_SIDEBAR.<span class="branch-0 cbranch-no" title="branch not covered" >name &amp;&amp;</span>
-<span class="cstat-no" title="statement not covered" >      appState.openSidebar.tab === CANVAS_SEARCH_TAB</span>
-    ) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >      const searchInput =</span>
-<span class="cstat-no" title="statement not covered" >        app.excalidrawContainerValue.container?.querySelector&lt;HTMLInputElement&gt;(</span>
-<span class="cstat-no" title="statement not covered" >          `.${CLASSES.SEARCH_MENU_INPUT_WRAPPER} input`,</span>
-<span class="cstat-no" title="statement not covered" >        );</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >      searchInput?.focus();</span>
-<span class="cstat-no" title="statement not covered" >      searchInput?.select();</span>
-<span class="cstat-no" title="statement not covered" >      return false;</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+      appState.openSidebar?.name === DEFAULT_SIDEBAR.name &amp;&amp;
+      appState.openSidebar.tab === CANVAS_SEARCH_TAB
+    ) {
+      const searchInput =
+        app.excalidrawContainerValue.container?.querySelector&lt;HTMLInputElement&gt;(
+          `.${CLASSES.SEARCH_MENU_INPUT_WRAPPER} input`,
+        );
+&nbsp;
+      searchInput?.focus();
+      searchInput?.select();
+      return false;
+    }
 &nbsp;
     return {
       appState: {
@@ -237,10 +237,10 @@ export const actionToggleSearchMenu = register({
       captureUpdate: CaptureUpdateAction.EVENTUALLY,
     };
   },
-  checked: <span class="fstat-no" title="function not covered" >(appState: AppState) =&gt; appState.gridModeEnabled,</span>
-  predicate: <span class="fstat-no" title="function not covered" >(element, appState, props) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    return props.gridModeEnabled === undefined;</span>
-<span class="cstat-no" title="statement not covered" >  },</span>
+  checked: (appState: AppState) =&gt; appState.gridModeEnabled,
+  predicate: (element, appState, props) =&gt; {
+    return props.gridModeEnabled === undefined;
+  },
   keyTest: (event) =&gt; event[KEYS.CTRL_OR_CMD] &amp;&amp; event.key === KEYS.F,
 });
 &nbsp;</pre></td></tr></table></pre>
@@ -250,7 +250,7 @@ export const actionToggleSearchMenu = register({
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-05-19T12:18:11.466Z
+                at 2026-05-20T09:03:20.882Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

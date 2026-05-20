@@ -1,3 +1,4 @@
+/* eslint-disable import/first */
 import { pointFrom, lineSegment, type Radians } from "@excalidraw/math";
 import { vi, describe, it, expect, beforeEach } from "vitest";
 
@@ -52,9 +53,9 @@ describe("shape helpers", () => {
     } as any);
 
     expect(rect.type).toBe("polygon");
-    expect(rect.data[0]).toEqual([10, 20]);
+    expect((rect.data as any)[0]).toEqual([10, 20]);
     expect(diamond.type).toBe("polygon");
-    expect(diamond.data[0]).toEqual([25, 20]);
+    expect((diamond.data as any)[0]).toEqual([25, 20]);
   });
 
   it("builds selection box polygon using element absolute coords", () => {
@@ -65,8 +66,8 @@ describe("shape helpers", () => {
       2,
     );
     expect(shape.type).toBe("polygon");
-    expect(shape.data[0]).toEqual([-1, 0]);
-    expect(shape.data[2]).toEqual([13, 14]);
+    expect((shape.data as any)[0]).toEqual([-1, 0]);
+    expect((shape.data as any)[2]).toEqual([13, 14]);
   });
 
   it("builds ellipse shape", () => {
@@ -146,7 +147,7 @@ describe("shape helpers", () => {
 
     const polygon = getFreedrawShape(baseElement, pointFrom(0, 0), true);
     expect(polygon.type).toBe("polygon");
-    expect(polygon.data.length).toBeGreaterThan(0);
+    expect((polygon.data as any).length).toBeGreaterThan(0);
   });
 
   it("builds closed curve shape for both non-rounded and rounded elements", () => {
